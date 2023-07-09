@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 size = 10
-order = 20
+order = 15
 fig, ax = plt.subplots()
 ax.scatter(0, 0)
 for i in range(1, order+1):
@@ -14,11 +14,4 @@ for i in range(1, order+1):
         for y1 in y:
             if y1 <= 60:
                 plt.axline((0, 0), (x1, y1))
-# plt.axline((0, 0), (5, 30))
-# plt.axline((0, 0), (-5, 30))
-# plt.axline((0, 0), (5, 10))
-# plt.axline((0, 0), (-5, 10))
-# plt.axline((0, 0), (0, 20))
-# plt.axline((0, 0), (-10, 40))
-# plt.axline((0, 0), (10, 40))
 plt.show()
